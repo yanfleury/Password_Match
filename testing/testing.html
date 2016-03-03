@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>trest</title>
+	
+</head>
+<body ng-app="hano" ng-controller="testController">
+
+<form name="myForm">
+
+
+
+Password: 
+
+<input type="password" ng-model="pw" required>
+			<br><br>
+
+Confirm Password:
+
+ <input type="password" ng-model="pw0" 
+ ng-match="pw" required>
+			<br><br>
+
+
+			<span ng-show="isMatch" style="background:red;color:white;">
+			   Please make sure you re-typed your password correctly!
+			</span>
+			<hr>
+
+			<button ng-click="check()">Save</button>
+			<br><br>
+
+</form>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="angular/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="services.js"></script>
+
+
+
+</body>
+</html>
