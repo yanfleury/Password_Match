@@ -6,39 +6,21 @@
 </head>
 <body ng-app="hano" ng-controller="testController">
 
-<form name="myForm">
+     <div class="col-md-6 col-xs-6" style="margin:0px auto; background:#336699;">
+        <form name="myForm">
 
-
-
-Password: 
-
-<input type="password" ng-model="pw" required>
-			<br><br>
-
-Confirm Password:
-
- <input type="password" ng-model="pw0" 
- ng-match="pw" required>
-			<br><br>
-
-
+			Password:<input type="password" ng-model="pw" required><br><br>
+			Confirm Password:<input type="password" ng-model="pw0" ng-match="pw" required><br><br>
+								
 			<span ng-show="isMatch" style="background:red;color:white;">
-			   Please make sure you re-typed your password correctly!
+			Please make sure you re-typed your password correctly!
 			</span>
 			<hr>
 
-			<button ng-click="check()">Save</button>
-			<br><br>
-
-</form>
-
-
-
-
-
-
-
-
+			<button ng-click="check()">Save</button><br><br>
+			
+        </form>
+     </div>
 
 <script type="text/javascript" src="angular/angular.min.js"></script>
 <script type="text/javascript" src="app.js"></script>
